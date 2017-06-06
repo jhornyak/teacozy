@@ -1,3 +1,77 @@
-div {
-  border: 1px solid red;
+
+body {
+  background-color: black;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  opacity: .9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid seashell;
+}
+
+#mission {
+  padding-top: 70px;
+  height: 700px;
+  width: 1200px;
+  background-image: url(../images/bkgrnd_img.jpg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+display: flex;
+align-items: center;
+padding-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+a {
+  display: inline;
+  text-decoration: underline;
+  color: gray;
+}
+
+.mission {
+  height: 100px;
+  background-color: black;
+  z-index: 10;
+}
+
+.teas {
+  width: 1000px;
+}
+
+.types {
+  display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+width: 1000px;
+}
+
+.teatype img {
+  width: 300px;
+  height: 200px;
+}
+
+.teatype {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
