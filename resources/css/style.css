@@ -1,6 +1,7 @@
 *{
   }
 
+
 body {
   background-color: black;
   font-family: Helvetica, Verdana, sans-serif;
@@ -10,6 +11,7 @@ body {
   text-align: center;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,22 +19,41 @@ header {
   width: 100%;
   height: 69px;
   position: fixed;
-  z-index: 1;
+  z-index: 15;
   background-color: black;
   border-bottom: 1px solid seashell;
 }
 
-#mission {
-  padding-top: 70px;
-  height: 700px;
-  width: 1200px;
-  background-image: url(../images/bkgrnd_img.jpg);
-}
 
 .container {
   display: flex;
+}
+
+.main-container {
+  background-image: url(../images/bkgrnd_img.jpg);
+  height: 700px;
+  width: 1200px;
+  padding-top: 70px;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+}
+
+.mission {
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 1200px;
+  z-index: 10;
+  flex-direction: column;
+}
+
+.bkgrnd {
+    background-color: black;
+}
+
+section {
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -51,30 +72,70 @@ a {
   color: gray;
 }
 
-.mission {
-  height: 100px;
-  background-color: black;
-  z-index: 10;
-}
 
 .teas {
   width: 1000px;
+  padding-top: 70px;
 }
 
 .types {
   display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-width: 1000px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1000px;
 }
 
 .teatype img {
   width: 300px;
   height: 200px;
+
+}
+
+.teatype span {
+  padding-top: 10px;
 }
 
 .teatype {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 10px;
+}
+
+.locations {
+  background-image: url(../images/locations.jpg);
+  height: 500px;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.store {
+  flex-direction: column;
+  width: 300px;
+  margin: 0px, 20px;
+}
+
+.all-locations {
+  width: 980px;
+  justify-content: space-around;
+}
+
+.no-margin {
+  margin: 10px;
+}
+p, h3 {
+  opacity: 1;
+}
+
+.contact {
+  height: 200px;
+  width: 1200px;
+}
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
